@@ -1,7 +1,7 @@
 export class Truck{
     constructor(truckId, db){
         this.truckId = truckId;
-        thid.db = db;
+        this.db = db;
     }
     createOrder(order){
         console.log('Adding order for ' + order.emailAddress);
