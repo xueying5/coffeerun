@@ -17,11 +17,11 @@
                 <form data-coffee-order="form">
                     <div class="form-group">
                         <label for="coffeeOrder">Coffee Order</label>
-                        <input type="text" name="coffee" id="coffeeOrder" class="form-control" autofocus>
+                        <input type="text" name="coffee" id="coffeeOrder" class="form-control" autofocus required pattern="[a-zA-Z\s]+">
                     </div>
                     <div class="form-froup">
                         <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput" name="emailAddress" value="" placeholder="dr@who.com">
+                        <input type="email" class="form-control" id="emailInput" name="emailAddress" value="" placeholder="dr@who.com" required>
                     </div>
                     <div class="radio">
                         <label>

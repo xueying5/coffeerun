@@ -12,4 +12,6 @@ formhandler.addSubmitHandler((data)=>{
     checkList.addRow(data);
 });
 const checkList = new CheckList(CHECKLIST_SELECTOR);
-checkList.addClickHandler(myTruck.deliverOrder);
+checkList.addClickHandler((data)=>{
+    myTruck.deliverOrder(data);
+});
