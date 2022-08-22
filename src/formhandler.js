@@ -13,16 +13,17 @@ export class FormHandler{
         console.log('Setting submit handler for form');
         this.$formElement.on('submit', (event) => {
             event.preventDefault();
-
             let data = {};
-            $(this).serializeArray().forEach((item) => {
+            let target = event.currentTarget;
+            // console.log(target);
+            $(target).serializeArray().forEach((item) => {
                 data[item.name] = item.value;
                 console.log(item.name + ' is' + item.value);
             });
             console.log(data);
             fn(data);
-            this.reset();
-            this.elements[0].focus();
+            target.reset();
+            target.elements[0].focus();
         });
     }
 }

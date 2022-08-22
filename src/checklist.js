@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { Row } from "./row";
+import { Row } from "./row.js";
 export class CheckList{
     constructor(selector){
         if (!selector) {

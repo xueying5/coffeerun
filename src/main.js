@@ -1,7 +1,7 @@
-import { DataStore } from "./datastore";
-import { Truck } from "./truck";
-import { FormHandler } from "./formhandler";
-import { CheckList } from "./checklist";
+import { DataStore } from "./datastore.js";
+import { Truck } from "./truck.js";
+import { FormHandler } from "./formhandler.js";
+import { CheckList } from "./checklist.js";
 const FORM_SELECTOR = '[data-coffee-order="form"]';
 const CHECKLIST_SELECTOR = '[data-coffee-order="checklist"]'
 
